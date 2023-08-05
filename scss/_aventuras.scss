@@ -1,0 +1,385 @@
+/* AVENTURAS */
+.aventu_body{
+    /*background: linear-gradient(to bottom,gray,#5d9ec6);*/
+    background: linear-gradient(to bottom,gray,#5d9ec6);
+    color: rgb(247, 246, 246);
+    height: 100%;
+    main{
+        h1{
+            text-align: center;
+            background: map-get($fondo,terciario);
+        }
+        .margin_div{ 
+            display: grid;  
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+            margin-top: 60px;
+            margin-bottom: 80px;
+            ol{
+                border-radius: 2%;
+                padding-right: 5px;
+                border: 2px solid black;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    button{
+                        cursor:pointer;
+                        color: white;
+                        position:relative;
+                        padding:10px 20px;
+                        background:rgb(127, 204, 243,.5);
+                        font-size:16px;
+                        font-weight: 900;
+                        margin-left: 0;
+                        width: 300px;
+                        border-top-right-radius:10px;
+                        border-bottom-left-radius:10px;
+                        transition:all .5s;
+                        &:after,&:before{
+                            content:" ";
+                            width:10px;
+                            height:10px;
+                            position:absolute;
+                            border :0px solid #fff;
+                            transition:all .5s;
+                            }
+                        &:after{
+                            top:-1px;
+                            left:-1px;
+                            border-top:3px solid black;
+                            border-left:3px solid black;
+                        }
+                        &:before{
+                            bottom:-1px;
+                            right:-1px;
+                            border-bottom:3px solid black;
+                            border-right:3px solid black;
+                        }
+                        &:hover{
+                            border-top-right-radius:0px;
+                            border-bottom-left-radius:0px;
+                            background:rgba(0, 0, 0, 0.968);
+                            color:white;
+                            &:before,&:after{   
+                            
+                            width:100%;
+                            height:100%;
+                            border-color:white;
+                            }
+                        }
+                        }
+                    
+                }
+
+            h2{
+                text-align: center;
+            }
+            .tex_aventuras{
+                text-align: justify;
+                /*padding-right: 30px;*/
+                padding-left: 0;
+            }
+        }
+        }
+
+        .iguazu_aventura{
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+            margin-bottom: 80px;
+            ol{
+                border-radius: 2%;
+                padding-right: 5px;
+                border: 2px solid black;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    button{
+                        cursor:pointer;
+                        color: white;
+                        position:relative;
+                        padding:10px 20px;
+                        background:rgb(127, 204, 243,.5);
+                        font-size:16px;
+                        font-weight: 900;
+                        margin-left: 0;
+                        width: 300px;
+                        border-top-right-radius:10px;
+                        border-bottom-left-radius:10px;
+                        transition:all .5s;
+                        &:after,&:before{
+                            content:" ";
+                            width:10px;
+                            height:10px;
+                            position:absolute;
+                            border :0px solid #fff;
+                            transition:all .5s;
+                            }
+                        &:after{
+                            top:-1px;
+                            left:-1px;
+                            border-top:3px solid black;
+                            border-left:3px solid black;
+                        }
+                        &:before{
+                            bottom:-1px;
+                            right:-1px;
+                            border-bottom:3px solid black;
+                            border-right:3px solid black;
+                        }
+                        &:hover{
+                            border-top-right-radius:0px;
+                            border-bottom-left-radius:0px;
+                            background:rgba(0, 0, 0, 0.968);
+                            color:white;
+                            &:before,&:after{   
+                            
+                            width:100%;
+                            height:100%;
+                            border-color:white;
+                            }
+                        }
+                        }
+                }
+            h2{
+                text-align: center;
+            }
+            .tex_aventuras{
+                text-align: justify;
+                margin-right: 20px;
+            }
+        }
+    }
+
+        .aven_cordo{  
+            display: grid;  
+            grid-template-columns: repeat(2,1fr);
+            place-items: center;
+            margin-bottom: 50px;
+            ol{
+                border-radius: 2%;
+                padding-right: 5px;
+                border: 2px solid black;
+                a{
+                    display: flex;
+                    justify-content: center;
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    button{
+                        cursor:pointer;
+                        color: white;
+                        position:relative;
+                        padding:10px 20px;
+                        background:rgb(127, 204, 243,.5);
+                        font-size:16px;
+                        font-weight: 900;
+                        margin-left: 0;
+                        width: 300px;
+                        border-top-right-radius:10px;
+                        border-bottom-left-radius:10px;
+                        transition:all .5s;
+                        &:after,&:before{
+                            content:" ";
+                            width:10px;
+                            height:10px;
+                            position:absolute;
+                            border :0px solid #fff;
+                            transition:all .5s;
+                            }
+                        &:after{
+                            top:-1px;
+                            left:-1px;
+                            border-top:3px solid black;
+                            border-left:3px solid black;
+                        }
+                        &:before{
+                            bottom:-1px;
+                            right:-1px;
+                            border-bottom:3px solid black;
+                            border-right:3px solid black;
+                        }
+                        &:hover{
+                            border-top-right-radius:0px;
+                            border-bottom-left-radius:0px;
+                            background:rgba(0, 0, 0, 0.968);
+                            color:white;
+                            &:before,&:after{   
+                            
+                            width:100%;
+                            height:100%;
+                            border-color:white;
+                            }
+                        }
+                        }
+                }
+            
+            h2{
+                text-align: center;
+            }
+            .tex_aventuras{
+                text-align: justify;
+                /*padding-right: 30px;*/
+                padding-left: 0;
+            }
+        }
+    }
+    }   
+}
+
+
+/* MOVIL AVENTURAS */
+@media (min-width:340px) and (max-width:576px)
+    {
+        .main_aventura{
+            .margin_div{
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    width: auto;
+                    grid-area: ol;
+                }
+                iframe{
+                    width: auto;
+                    grid-area: iframe;
+                }
+            }
+            .iguazu_aventura{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                    width: auto;
+                }
+            }
+            .aven_cordo{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                    width: auto;
+                }
+            }
+        }
+    }
+    /*Medida 320 a 400 */
+@media(min-width:320px) and (max-width:400px){
+        .aventu_body{
+            .boton{
+                a{
+                    font-size: 15px;
+                    width: 30px;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+            .main_aventura{
+                .margin_div{
+                    grid-template-areas: 
+                    "ol ol"
+                    "iframe iframe";
+                    ol{
+                        grid-area: ol;
+                        width: 280px;
+                    }
+                    iframe{
+                        grid-area: iframe;
+                        width: 280px;
+                    }
+                }
+                .iguazu_aventura{
+                    display: grid;
+                    grid-template-areas: 
+                    "ol ol"
+                    "iframe iframe";
+                    ol{
+                        grid-area: ol;
+                        width: 280px;
+                    }
+                    iframe{
+                        grid-area: iframe;
+                        width: 280px;
+                    }
+                }
+                .aven_cordo{
+                    display: grid;
+                    grid-template-areas: 
+                    "ol ol"
+                    "iframe iframe";
+                    padding: 0;
+                    margin: 0;
+                    ol{
+                        grid-area: ol;
+                        width: 280px;
+    
+                    }
+                    iframe{
+                        grid-area: iframe;
+                        width: 280px;
+                    }
+                }
+            }
+        }
+    }
+/* Vista Tablet */
+@media (min-width:576px) and (max-width:991px)
+    {
+        .main_aventura{
+            .margin_div{
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    width: auto;
+                    grid-area: ol;
+                }
+                iframe{
+                    grid-area: iframe;
+                }
+            }
+            .iguazu_aventura{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                }
+            }
+            .aven_cordo{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                }
+            }
+        }
+    }

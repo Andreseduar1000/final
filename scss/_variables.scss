@@ -1,0 +1,16 @@
+/*VARIABLES*/
+$fondo:(
+    primario: #222425,
+    secundario: white,
+    terciario: #a09c9c,
+    
+);
+
+
+@mixin medidas($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+$full-width:100%;
+$full-height:100%;

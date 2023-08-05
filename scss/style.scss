@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'principal';
+@import 'aventuras';
+@import 'nosotros';
+@import 'contacto';
+@import 'subpaginas';
+/* PAGINA PRINCIPAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.extend-zoom{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+}
+@keyframes efectos{
+    0%{
+        width: 400px;
+        height: 300px;
+    }
+    50%{
+        width:430px;
+        height: 330px;
+    }
+    100%{
+        width:400px ;
+        height: 300px;
+    }
+}
+

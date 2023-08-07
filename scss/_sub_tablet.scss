@@ -1,0 +1,118 @@
+/*TABLET USHUAIA*/
+@media (min-width:576px) and (max-width:991px){
+    .body_ushuaia{
+        .ushuaia_style{
+            h1{
+                text-align: center;
+                margin-bottom: 10px;
+                color: map-get($fondo,secundario);
+                background: map-get($fondo,terciario);
+            }
+            .carou{
+                display: flex;
+                @include pos (center,center);
+                margin-top: 0;
+                div{
+                    @include medidas (auto,300px);
+                    margin-top:0;
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                text-align: justify;
+                color: map-get($fondo,secundario);
+                margin-top: 20px;
+                width: auto;
+            }
+            .compra{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3,1fr);
+                place-items: center;
+                .nota{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    
+}
+
+/*TABLET IGUAZU*/
+@media (min-width:576px) and (max-width:991px){
+    .body_iguazu{
+        .iguazu_style{
+            h1{
+                text-align: center;
+                margin-bottom: 10px;
+                color: map-get($fondo,secundario);
+                background: map-get($fondo,terciario);
+            }
+            .sliter{
+                display: flex;
+                @include pos (center,center);
+                margin-top: 0;
+                div{
+                    height: 300px;
+                    width: auto;
+                    margin-top:0;
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                text-align: justify;
+                color: map-get($fondo,secundario);
+                margin-top: 20px;
+                width: auto;
+            }
+            .compra_iguazu{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3,1fr);
+                place-items: center;
+                .nota_iguazu{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+/*TABLET CORDOBA*/
+@media (min-width:576px) and (max-width:991px){
+    .body_cordoba{
+        .cordoba_style{
+            h1{
+                text-align: center;
+                margin-bottom: 10px;
+                color: map-get($fondo,secundario);
+                background: map-get($fondo,terciario);
+            }
+            .sliter_cord{
+                display: flex;
+                @include pos (center,center);
+                margin-top: 0;
+                div{
+                    @include medidas (auto,300px);
+                    margin-top:0;
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                text-align: justify;
+                color: map-get($fondo,secundario);
+                margin-top: 20px;
+                width: auto;
+            }
+            .compra_cordoba{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3,1fr);
+                place-items: center;
+                .nota_cordoba{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

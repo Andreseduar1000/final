@@ -1,0 +1,122 @@
+/* MOVIL AVENTURAS */
+@media (min-width:340px) and (max-width:576px)
+    {
+        .main_aventura{
+            .margin_div{
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    width: auto;
+                    grid-area: ol;
+                }
+                iframe{
+                    width: auto;
+                    grid-area: iframe;
+                }
+            }
+            .iguazu_aventura{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                    width: auto;
+                }
+            }
+            .aven_cordo{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                    width: auto;
+                }
+            }
+        }
+    }
+    /*Medida 320 a 400 */
+@media(min-width:320px) and (max-width:400px){
+        .aventu_body{
+            .boton{
+                a{
+                    font-size: 16px;
+                    width: 30px;
+                    img{
+                        width: 40px;
+                    }
+                }
+            }
+            .main_aventura{
+                .margin_div{
+                    grid-template-areas: 
+                    "ol ol"
+                    "iframe iframe";
+                    ol{
+                        grid-area: ol;
+                        width: 280px;
+                        a{
+                            button{
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                    iframe{
+                        grid-area: iframe;
+                        width: 280px;
+                    }
+                }
+                .iguazu_aventura{
+                    display: grid;
+                    grid-template-areas: 
+                    "ol ol"
+                    "iframe iframe";
+                    ol{
+                        grid-area: ol;
+                        width: 280px;
+                        a{
+                            button{
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                    iframe{
+                        grid-area: iframe;
+                        width: 280px;
+                    }
+                }
+                .aven_cordo{
+                    display: grid;
+                    grid-template-areas: 
+                    "ol ol"
+                    "iframe iframe";
+                    padding: 0;
+                    margin: 0;
+                    ol{
+                        grid-area: ol;
+                        width: 280px;
+                        a{
+                            button{
+                                margin-right: 30px;
+                            }
+                        }
+                    }
+                    iframe{
+                        grid-area: iframe;
+                        width: 280px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }

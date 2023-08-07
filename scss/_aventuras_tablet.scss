@@ -1,0 +1,45 @@
+
+/* Vista Tablet */
+@media (min-width:576px) and (max-width:991px)
+    {
+        .main_aventura{
+            .margin_div{
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    width: auto;
+                    grid-area: ol;
+                }
+                iframe{
+                    grid-area: iframe;
+                }
+            }
+            .iguazu_aventura{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                }
+            }
+            .aven_cordo{
+                display: grid;
+                grid-template-areas: 
+                "ol ol"
+                "iframe iframe";
+                ol{
+                    grid-area: ol;
+                    width: auto;
+                }
+                iframe{
+                    grid-area: iframe;
+                }
+            }
+        }
+    }

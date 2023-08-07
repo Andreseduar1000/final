@@ -3,14 +3,35 @@ $fondo:(
     primario: #222425,
     secundario: white,
     terciario: #a09c9c,
+    cuarto:blue,
+    quinto:black,
     
 );
-
-
+$full-width:100%;
+$full-height:100%;
+/*Mixin*/
 @mixin medidas($ancho,$alto){
     width: $ancho;
     height: $alto;
 }
+@mixin nosotros($ancho,$espacio,$margen){
+    width:$ancho;
+    padding: $espacio;
+    margin:$margen;
+}
+@mixin pos($justify,$aling){
+    justify-content: $justify;
+    align-items: $aling;
+}
 
-$full-width:100%;
-$full-height:100%;
+/*Extend*/
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+}
+.extend-zoom{
+    transform: scale(1.2);
+    transition: .5s;
+    cursor: pointer;
+}

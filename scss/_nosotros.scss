@@ -1,8 +1,7 @@
 /* NOSOTROS */
 body{
     background: linear-gradient(to bottom,gray,#5d9ec6);
-    height: 100%;
-    width: auto;
+    @include medidas(auto,100%);
 .text_nosotros{
     height: 100%;
     place-items: center;
@@ -25,8 +24,7 @@ body{
         display: flex;
         justify-content:center;
         div{
-            height: 400px;
-            width: 600px;
+            @include medidas (600px,400px);
             margin-top: 0px;
         }
     }
@@ -51,15 +49,11 @@ body{
             section{
                 height: 350px;
                 div{
-                    width: auto;
-                    padding: 2px;
-                    margin: 2px;
+                    @include nosotros(auto,2px,2px);
                 }
             }
             p{
-                width: auto;
-                padding: 4px;
-                margin: 4px;
+                @include nosotros(auto,4px,4px);
             }
         }
     }
@@ -72,7 +66,7 @@ body{
         .boton{
             margin-bottom: 20px;
             a{
-                font-size: 15px;
+                font-size: 16px;
                 width: 30px;
                 img{
                     width: 40px;
@@ -83,15 +77,11 @@ body{
             section{
                 height: 350px;
                 div{
-                    width: auto;
-                    padding: 2px;
-                    margin: 2px;
+                    @include nosotros (auto,2px,2px);
                 }
             }
             p{
-                width: auto;
-                padding: 4px;
-                margin: 4px;
+                @include nosotros(auto,4px,4px);
             }
         }
     }
@@ -105,17 +95,14 @@ body{
         .somos{
             section{
                 div{
-                    width: 550px;
+                    @include medidas(550px,300px);
                     padding: 2px;
                     margin: 2px;
-                    height: 300px;
                     margin-bottom: 50px;
                 }
             }
             p{
-                width: 550px;
-                padding: 4px;
-                margin: 4px;
+                @include nosotros(550px,4px,4px);
             }
         }
     }

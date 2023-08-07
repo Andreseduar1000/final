@@ -2,7 +2,7 @@
 .aventu_body{
     /*background: linear-gradient(to bottom,gray,#5d9ec6);*/
     background: linear-gradient(to bottom,gray,#5d9ec6);
-    color: rgb(247, 246, 246);
+    color:map-get($fondo,secundario);
     height: 100%;
     main{
         h1{
@@ -10,8 +10,9 @@
             background: map-get($fondo,terciario);
         }
         .margin_div{ 
-            display: grid;  
-            grid-template-columns: repeat(2,1fr);
+            /*display: grid;  
+            grid-template-columns: repeat(2,1fr);*/
+            @extend .grilla;
             place-items: center;
             margin-top: 60px;
             margin-bottom: 80px;
@@ -39,8 +40,7 @@
                         transition:all .5s;
                         &:after,&:before{
                             content:" ";
-                            width:10px;
-                            height:10px;
+                            @include medidas(10px,10px);
                             position:absolute;
                             border :0px solid #fff;
                             transition:all .5s;
@@ -85,9 +85,8 @@
         }
 
         .iguazu_aventura{
-            display: grid;
+            @extend .grilla;
             place-items: center;
-            grid-template-columns: repeat(2,1fr);
             align-items: center;
             margin-bottom: 80px;
             ol{
@@ -114,8 +113,7 @@
                         transition:all .5s;
                         &:after,&:before{
                             content:" ";
-                            width:10px;
-                            height:10px;
+                            @include medidas (10px,10px);
                             position:absolute;
                             border :0px solid #fff;
                             transition:all .5s;
@@ -157,8 +155,7 @@
     }
 
         .aven_cordo{  
-            display: grid;  
-            grid-template-columns: repeat(2,1fr);
+            @extend .grilla;
             place-items: center;
             margin-bottom: 50px;
             ol{
@@ -185,8 +182,7 @@
                         transition:all .5s;
                         &:after,&:before{
                             content:" ";
-                            width:10px;
-                            height:10px;
+                            @include medidas (10px,10px);
                             position:absolute;
                             border :0px solid #fff;
                             transition:all .5s;
@@ -284,7 +280,7 @@
         .aventu_body{
             .boton{
                 a{
-                    font-size: 15px;
+                    font-size: 16px;
                     width: 30px;
                     img{
                         width: 40px;
@@ -299,6 +295,11 @@
                     ol{
                         grid-area: ol;
                         width: 280px;
+                        a{
+                            button{
+                                margin-right: 30px;
+                            }
+                        }
                     }
                     iframe{
                         grid-area: iframe;
@@ -313,6 +314,11 @@
                     ol{
                         grid-area: ol;
                         width: 280px;
+                        a{
+                            button{
+                                margin-right: 30px;
+                            }
+                        }
                     }
                     iframe{
                         grid-area: iframe;
@@ -329,11 +335,16 @@
                     ol{
                         grid-area: ol;
                         width: 280px;
-    
+                        a{
+                            button{
+                                margin-right: 30px;
+                            }
+                        }
                     }
                     iframe{
                         grid-area: iframe;
                         width: 280px;
+                        margin-bottom: 40px;
                     }
                 }
             }

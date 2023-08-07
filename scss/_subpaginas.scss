@@ -1,6 +1,6 @@
 /* USHUAIA */
 .body_ushuaia{
-    height: 100%;
+    height:$full-height;
     main{
         h1{
             text-align: center;
@@ -10,11 +10,9 @@
         }
         .carou{
             display: flex;
-            justify-content: center;
-            align-items: center;
+            @include pos (center,center);
             div{
-                height: 400px;
-                width: 800px;
+                @include medidas (800px,400px);
                 margin-top:0;
                 margin-bottom: 0;
             }
@@ -30,10 +28,9 @@
             display: flex;
             justify-content: space-evenly;
             .nota{
-                width: 400px;
+                @include medidas (400px,580px);
                 text-align: center;
                 background-color: #c2bfbf;
-                height: 580;
                 .card-body{
                     margin-top: 180px;
                     text-align: center;
@@ -64,8 +61,7 @@
                         transition:all .5s;
                         &:after,&:before{
                             content:" ";
-                            width:10px;
-                            height:10px;
+                            @include medidas (10px,10px);
                             position:absolute;
                             border :0px solid #fff;
                             transition:all .5s;
@@ -85,13 +81,11 @@
                         &:hover{
                             border-top-right-radius:0px;
                             border-bottom-left-radius:0px;
-                            background:rgba(0, 0, 0, 0.968);
-                            color:white;
+                            background:map-get($fondo,quinto);
+                            color:map-get($fondo,secundario);
                             &:before,&:after{   
-                            
-                            width:100%;
-                            height:100%;
-                            border-color:white;
+                            @include medidas(100%,100%);
+                            border-color:map-get($fondo,secundario);
                             }
                         }
                         }
@@ -117,12 +111,10 @@
             }
             .carou{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include pos (center,center);
                 margin-top: 0;
                 div{
-                    height: 300px;
-                    width: auto;
+                    @include medidas (auto,300px);
                     margin-top:0;
                     margin-bottom: 0;
                 }
@@ -159,12 +151,10 @@
             }
             .carou{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include pos (center,center);
                 margin-top: 0;
                 div{
-                    height: 300px;
-                    width: auto;
+                    @include medidas (auto,300px);
                     margin-top:0;
                     margin-bottom: 0;
                 }
@@ -178,7 +168,7 @@
             .compra{
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(3    ,1fr);
+                grid-template-rows: repeat(3,1fr);
                 place-items: center;
                 .nota{
                     margin-bottom: 30px;
@@ -202,11 +192,9 @@
             margin-top:0;
             padding-top: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            @include pos (center,center);
             div{
-                height: 400px;
-                width: 800px;
+                @include medidas (800px,400px);
                 margin-top:0;
                 margin-bottom: 0;
             }
@@ -222,10 +210,9 @@
             display: flex;
             justify-content: space-evenly;
             .nota_iguazu{
-                width: 400px;
+                @include medidas (400px,580);
                 text-align: center;
                 background-color: #c2bfbf;
-                height: 580;
                 .cataratas{
                     height: 215px;
                 }
@@ -246,7 +233,6 @@
                     }
                     .precio2{
                         padding-top: 25px;
-
                     }
                     .pre{
                         padding-top: 45px;
@@ -266,8 +252,7 @@
                         transition:all .5s;
                         &:after,&:before{
                             content:" ";
-                            width:10px;
-                            height:10px;
+                            @include medidas (10px,10px);
                             position:absolute;
                             border :0px solid #fff;
                             transition:all .5s;
@@ -288,16 +273,13 @@
                             border-top-right-radius:0px;
                             border-bottom-left-radius:0px;
                             background:rgba(0, 0, 0, 0.968);
-                            color:white;
+                            color:map-get($fondo,secundario);
                             &:before,&:after{   
-                            
-                            width:100%;
-                            height:100%;
-                            border-color:white;
+                            @include medidas (100%,100%);
+                            border-color:map-get($fondo,secundario);
                             }
                         }
-                        }
-
+                    }
                 }
             }
         }
@@ -316,12 +298,10 @@
             }
             .sliter{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include pos (center,center);
                 margin-top: 0;
                 div{
-                    height: 300px;
-                    width: auto;
+                    @include medidas (auto,300px);
                     margin-top:0;
                     margin-bottom: 0;
                 }
@@ -358,8 +338,7 @@
             }
             .sliter{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include pos (center,center);
                 margin-top: 0;
                 div{
                     height: 300px;
@@ -377,7 +356,7 @@
             .compra_iguazu{
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(3    ,1fr);
+                grid-template-rows: repeat(3,1fr);
                 place-items: center;
                 .nota_iguazu{
                     margin-bottom: 30px;
@@ -404,8 +383,7 @@
             justify-content: center;
             align-items: center;
             div{
-                height: 400px;
-                width: 800px;
+                @include medidas (800px,400px);
                 margin-top:0;
                 margin-bottom: 0;
             }
@@ -421,10 +399,9 @@
             display: flex;
             justify-content: space-evenly;
             .nota_cordoba{
-                width: 400px;
+                @include medidas (400px,none);
                 text-align: center;
                 background-color: #c2bfbf;
-                height: 580;
                 .paisaje_cord{
                     height: 215px;
                 }
@@ -448,7 +425,6 @@
                     }
                     .pre_cord{
                         padding-top: 10px;
-
                     }
                     .pre_cord2{
                         padding-top: 10px;
@@ -458,7 +434,7 @@
                     }
                     button{
                         cursor:pointer;
-                        color: white;
+                        color: map-get($fondo,secundario);
                         position:relative;
                         padding:10px 20px;
                         background:rgb(127, 204, 243,.5);
@@ -471,8 +447,7 @@
                         transition:all .5s;
                         &:after,&:before{
                             content:" ";
-                            width:10px;
-                            height:10px;
+                            @include medidas (10px,10px);
                             position:absolute;
                             border :0px solid #fff;
                             transition:all .5s;
@@ -492,16 +467,14 @@
                         &:hover{
                             border-top-right-radius:0px;
                             border-bottom-left-radius:0px;
-                            background:rgba(0, 0, 0, 0.968);
-                            color:white;
+                            background:map-get($fondo,quinto);
+                            color:map-get($fondo,secundario);
                             &:before,&:after{   
-                            
-                            width:100%;
-                            height:100%;
-                            border-color:white;
+                            @include medidas (100%,100%);
+                            border-color:map-get($fondo,secundario);
                             }
                         }
-                        }
+                    }
                 }
             }
         }
@@ -520,12 +493,10 @@
             }
             .sliter_cord{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include pos (center,center);
                 margin-top: 0;
                 div{
-                    height: 300px;
-                    width: auto;
+                    @include medidas (auto,300px);
                     margin-top:0;
                     margin-bottom: 0;
                 }
@@ -562,12 +533,10 @@
             }
             .sliter_cord{
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                @include pos (center,center);
                 margin-top: 0;
                 div{
-                    height: 300px;
-                    width: auto;
+                    @include medidas (auto,300px);
                     margin-top:0;
                     margin-bottom: 0;
                 }
@@ -581,7 +550,7 @@
             .compra_cordoba{
                 display: grid;
                 grid-template-columns: 1fr;
-                grid-template-rows: repeat(3    ,1fr);
+                grid-template-rows: repeat(3,1fr);
                 place-items: center;
                 .nota_cordoba{
                     margin-bottom: 30px;

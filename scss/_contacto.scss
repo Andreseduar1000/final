@@ -13,7 +13,7 @@
     grid-area: h1;
     }
     .mensaje{
-        color: white;
+        color:map-get($fondo,secundario);
         margin-top: 30px;
         text-align: justify;
         width: 500px;
@@ -38,31 +38,30 @@
         border-radius: 2%;
         div{
             label{
-                color: white;
+                color:map-get($fondo,secundario);
             }
             input{
-                width: 500px;
-                height: 30px;
+                @include medidas (500px,30px);
                 border:solid 1px;
-                border-color: black;
-                background-color: rgba(255, 255, 255, 0.975);
+                border-color:map-get($fondo,quinto);
+                background-color: map-get($fondo,secundario);
                 
             } 
             input:focus{
-                border-color: blue;
+                border-color:map-get($fondo,cuarto);
                 outline: none;
             }
         }
         label{
-            color: white;
+            color:map-get($fondo,secundario);
         }
         textarea{
             width: 500px;
             border: solid 1px;
-            background-color: rgba(255, 255, 255, 0.975);
+            background-color:map-get($fondo,secundario);
         }
         textarea:focus{
-            border-color: blue;
+            border-color: map-get($fondo,cuarto);
             outline: none;
         }
         button{
@@ -80,8 +79,7 @@
             transition:all .5s;
             &:after,&:before{
                 content:" ";
-                width:10px;
-                height:10px;
+                @include medidas(10px,10px);
                 position:absolute;
                 border :0px solid #fff;
                 transition:all .5s;
@@ -104,9 +102,7 @@
                 background:rgba(0, 0, 0, 0.968);
                 color:white;
                 &:before,&:after{   
-                
-                width:100%;
-                height:100%;
+                @include medidas(100%,100%);
                 border-color:white;
                 }
             }
@@ -181,10 +177,8 @@ body{
         }
         section{
             grid-area: section;
-            padding:5px;
-            margin: 0;
+            @include nosotros (auto,5px,20px);
             margin-bottom: 20px;
-            width: auto;
             place-items: center;
             .formulario{
                 width: 280px;

@@ -189,7 +189,7 @@
                         &:hover{
                             border-top-right-radius:0px;
                             border-bottom-left-radius:0px;
-                            background:rgba(0, 0, 0, 0.968);
+                            background:map-get($fondo,quinto);
                             color:map-get($fondo,secundario);
                             &:before,&:after{   
                             @include medidas (100%,100%);

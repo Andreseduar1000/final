@@ -1,3 +1,4 @@
+/*MAP GET*/
 /*VARIABLES*/
 /*Mixin*/
 /*Extend*/
@@ -1251,7 +1252,7 @@ body .text_nosotros p {
 .body_iguazu main .compra_iguazu .nota_iguazu .card-body button:hover {
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  background: rgba(0, 0, 0, 0.968);
+  background: black;
   color: white;
 }
 .body_iguazu main .compra_iguazu .nota_iguazu .card-body button:hover:before, .body_iguazu main .compra_iguazu .nota_iguazu .card-body button:hover:after {

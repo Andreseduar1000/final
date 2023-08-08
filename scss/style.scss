@@ -1,4 +1,5 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import 'principal';
 @import 'principal_movil';
 @import 'principal_tablet';
@@ -15,8 +16,6 @@
 @import 'sub_movil';
 @import 'sub_tablet';
 /* PAGINA PRINCIPAL */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 *{
     font-family: 'Roboto', sans-serif;
     padding: 0;

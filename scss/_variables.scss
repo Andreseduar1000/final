@@ -1,4 +1,4 @@
-/*VARIABLES*/
+/*MAP GET*/
 $fondo:(
     primario: #222425,
     secundario: white,
@@ -7,8 +7,10 @@ $fondo:(
     quinto:black,
     
 );
+/*VARIABLES*/
 $full-width:100%;
 $full-height:100%;
+
 /*Mixin*/
 @mixin medidas($ancho,$alto){
     width: $ancho;

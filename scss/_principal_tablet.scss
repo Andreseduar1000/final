@@ -52,39 +52,37 @@
         }
         
     }
-footer{
-    background-color: black;
-    height: 70px;
-    .footer{ 
-        @include medidas(100%,100%);
-        display: flex;
-        align-items: center;    
-    }
-    .contacto2{
-        margin-right:100px;
-        a{
-            text-decoration: none;
-            color: map-get($fondo,secundario);
-        }
-    }
-    
-    nav{
-        ul{
+    footer{
+        background-color: black;
+        height: 70px;
+        .footer{ 
+            @include medidas(100%,100%);
             display: flex;
-            margin:50px;
-            padding: 0;
-            text-align: right;
-            justify-content:start;
-            li{
-                display: flex;
+            align-items: center;    
+        }
+        .contacto2{
+            margin-right:100px;
+            a{
                 text-decoration: none;
-                img{
-                    @include medidas(30px,30px);
+                color: map-get($fondo,secundario);
+            }
+        }
+        nav{
+            ul{
+                display: flex;
+                margin:50px;
+                padding: 0;
+                text-align: right;
+                justify-content:start;
+                li{
+                    display: flex;
+                    text-decoration: none;
+                        img{
+                            @include medidas(30px,30px);
+                        }
+                    }
                 }
             }
         }
     }
-    
-}
-}
 }

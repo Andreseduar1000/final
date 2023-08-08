@@ -1,104 +1,98 @@
 
 /* Movil contacto */
-@media (min-width:320px) and (max-width:576px){
+@media (min-width:400px) and (max-width:576px){
     body{
         .contacto{
             grid-template-areas: 
             "h1"
-            "div "
+            "div"
             "section";
-            width: auto;
-        
-        h1{
-            grid-area: h1;
-        }
-        section{
-            grid-area: section;
-            padding: 0;
-            width: auto;
-            .formulario{
-                width: 300px;
-                
-                div{
-                    input{
-                        width: 285px;
-                        
-                    }
-                }
-                textarea{
-                    width: 285px;
-                    
-                }
-                button{
-                    width: 200px; 
-                    margin-left: 40px;
-                }
-            }
-        }
-        .mensaje{
-            grid-area: div;
-            width: 380px;
-            .map{
-                iframe{
-                    width: 350px;
-                }
-            }
-        }
-    }
-    }
-    }
-    
-    /* Movil contacto 320 a 400*/
-    @media (min-width:320px) and (max-width:400px){
-        body{
-            .contacto{
-                grid-template-areas: 
-                "h1"
-                "div "
-                "section";
-                width: auto;
-                justify-items: center;
             h1{
                 grid-area: h1;
-                width: 100%;
+                width: auto;
             }
             section{
                 grid-area: section;
-                @include nosotros (auto,5px,20px);
-                margin-bottom: 20px;
-                place-items: center;
+                padding: 0;
+                width: auto;
                 .formulario{
-                    width: 280px;
-                    margin: 0;
-                    
+                    width: 300px;
                     div{
                         input{
-                            width: 265px;
-                            
+                            width: 285px;
                         }
                     }
                     textarea{
-                        width: 265px;
-                        
+                        width: 285px;
                     }
                     button{
                         width: 200px; 
-                        margin-left: 30px;
+                        margin-left: 40px;
                     }
                 }
             }
             .mensaje{
                 grid-area: div;
-                width: 300px;
-                margin: 0;
+                width: 380px;
                 .map{
                     iframe{
-                        width: 280px;
-                        margin: 0;
-                        margin-bottom: 10px;
+                        width: 350px;
+                        }
                     }
                 }
             }
         }
-        }
     }
+    
+    /* Movil contacto 320 a 400*/
+    @media (min-width:320px) and (max-width:400px){
+        body{
+            height: 100%;
+            padding:0;
+            .contacto{
+                grid-template-areas: 
+                "h1"
+                "div"
+                "section";
+                justify-items: center;
+                h1{
+                    grid-area: h1;
+                    width:100%;
+                }
+                section{
+                    grid-area: section;
+                    @include nosotros (auto,0px,20px);
+                    margin-bottom: 20px;
+                    place-items: center;
+                    .formulario{
+                        width:260px;
+                        margin: 0;
+                        div{
+                            input{
+                            width: 245px;
+                            }   
+                        }
+                        textarea{
+                            width: 245px;
+                        }
+                        button{
+                            width: 180px; 
+                            margin-left: 30px;
+                        }
+                    }
+                }
+                .mensaje{
+                        grid-area: div;
+                        width: 260px;
+                        margin: 0;
+                        .map{
+                            iframe{
+                                width: 240px;
+                                margin: 0;
+                                margin-bottom: 10px;
+                            }
+                        }   
+                    }
+                }
+            }
+        }

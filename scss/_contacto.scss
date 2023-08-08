@@ -1,111 +1,110 @@
 /* CONTACTO */
 .contacto{
-    height: 100%;
-    background: linear-gradient(to bottom,gray,#5d9ec6);
-    display: grid;
-    grid-template-areas: 
-    "h1 h1"
-    "div section";
-    h1{
-    background-color: map-get($fondo,terciario);
-    color:map-get($fondo,secundario);
-    text-align: center;
-    grid-area: h1;
-    }
-    .mensaje{
+        height: 100%;
+        background: linear-gradient(to bottom,gray,#5d9ec6);
+        display: grid;
+        grid-template-areas: /*Grilla de contacto*/
+        "h1 h1"
+        "div section";
+        h1{
+        background-color: map-get($fondo,terciario);
         color:map-get($fondo,secundario);
-        margin-top: 30px;
-        text-align: justify;
-        width: 500px;
-        h2{
-            text-align: center;
+        text-align: center;
+        grid-area: h1;
         }
-        div{
-            text-align: center;
-            .map{
+        .mensaje{
+            color:map-get($fondo,secundario);
+            margin-top: 30px;
+            text-align: justify;
+            width: 500px;
+            h2{
+                text-align: center;
+            }
+            div{
+                text-align: center;
+                .map{
                 margin-top: 30px;
+                }
             }
         }
-    }
-    section{
-        grid-area: section;
-    .formulario{
-        margin: 20px;
-        padding: 5px;
-        border: 2px solid;
-        width: 520px;
-        background-color:transparent;
-        border-radius: 2%;
-        div{
+        section{
+            grid-area: section;
+            .formulario{
+            margin: 20px;
+            padding: 5px;
+            border: 2px solid;
+            width: 520px;
+            background-color:transparent;
+            border-radius: 2%;
+            div{
+                label{
+                    color:map-get($fondo,secundario);
+                }
+                input{
+                    @include medidas (500px,30px);
+                    border:solid 1px;
+                    border-color:map-get($fondo,quinto);
+                    background-color: map-get($fondo,secundario);
+                }    
+                input:focus{
+                    border-color:map-get($fondo,cuarto);
+                    outline: none;
+                }
+            }
             label{
                 color:map-get($fondo,secundario);
             }
-            input{
-                @include medidas (500px,30px);
-                border:solid 1px;
-                border-color:map-get($fondo,quinto);
-                background-color: map-get($fondo,secundario);
-                
-            } 
-            input:focus{
-                border-color:map-get($fondo,cuarto);
+                textarea{
+                width: 500px;
+                border: solid 1px;
+                background-color:map-get($fondo,secundario);
+            }
+            textarea:focus{
+                border-color: map-get($fondo,cuarto);
                 outline: none;
             }
-        }
-        label{
-            color:map-get($fondo,secundario);
-        }
-        textarea{
-            width: 500px;
-            border: solid 1px;
-            background-color:map-get($fondo,secundario);
-        }
-        textarea:focus{
-            border-color: map-get($fondo,cuarto);
-            outline: none;
-        }
-        button{
-            cursor:pointer;
-            color: white;
-            position:relative;
-            padding:10px 20px;
-            background:rgb(127, 204, 243,.5);
-            font-size:16px;
-            font-weight: 900;
-            margin-left: 140px;
-            width: 250px;
-            border-top-right-radius:10px;
-            border-bottom-left-radius:10px;
-            transition:all .5s;
-            &:after,&:before{
+            button{ 
+                cursor:pointer;
+                color: white;
+                position:relative;
+                padding:10px 20px;
+                background:rgb(127, 204, 243,.5);
+                font-size:16px;
+                font-weight: 900;
+                margin-left: 140px;
+                width: 250px;
+                border-top-right-radius:10px;
+                border-bottom-left-radius:10px;
+                transition:all .5s;
+                &:after,&:before{
                 content:" ";
                 @include medidas(10px,10px);
                 position:absolute;
                 border :0px solid #fff;
                 transition:all .5s;
+                    }
+                &:after{
+                    top:-1px;
+                    left:-1px;
+                    border-top:3px solid black;
+                    border-left:3px solid black;
                 }
-            &:after{
-                top:-1px;
-                left:-1px;
-                border-top:3px solid black;
-                border-left:3px solid black;
-            }
-            &:before{
-                bottom:-1px;
-                right:-1px;
-                border-bottom:3px solid black;
-                border-right:3px solid black;
-            }
-            &:hover{
-                border-top-right-radius:0px;
-                border-bottom-left-radius:0px;
-                background:rgba(0, 0, 0, 0.968);
-                color:white;
-                &:before,&:after{   
-                @include medidas(100%,100%);
-                border-color:white;
+                &:before{
+                    bottom:-1px;
+                    right:-1px;
+                    border-bottom:3px solid black;
+                    border-right:3px solid black;
                 }
-            }
+                &:hover{
+                    border-top-right-radius:0px;
+                    border-bottom-left-radius:0px;
+                    background:rgba(0, 0, 0, 0.968);
+                    color:white;
+                    &:before,&:after{   
+                    @include medidas(100%,100%);
+                    border-color:white;
+                    }
+                }
             }
         }
     }

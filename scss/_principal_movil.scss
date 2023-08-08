@@ -16,51 +16,48 @@
                 text-align: center;
                 .dropdown-item{
                     text-align: center;
-                }
-            }
-        }
-    main{
-        .slide{
-            width:auto;
-            img{
-                height: 300px;
-            }
-            div{
-                .carousel-caption{
-                    h5{
-                    color:map-get($fondo,secundario);
-                    font-size: 20px;
-                    padding-top: 80px;
                     }
                 }
             }
-            
-        }
-        section{
-            .paginas{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2,1fr);
-                justify-items: center;
-                padding:0;
-                gap: 10px;
-                img{
-                    @include medidas(280px,227px);
+            main{
+                .slide{
+                    width:auto;
+                    img{
+                        height: 300px;
+                    }
+                    div{
+                        .carousel-caption{
+                            h5{
+                                color:map-get($fondo,secundario);
+                                font-size: 20px;
+                                padding-top: 80px;
+                            }
+                        }
+                    }
+                }
+                section{
+                    .paginas{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(2,1fr);
+                        justify-items: center;
+                        padding:0;
+                        gap: 10px;
+                        img{
+                        @include medidas(280px,227px);
+                        }
+                    }
                 }
             }
-        }
-        
-    }
-    footer{
-        margin:0;
-        display: flex;
-        nav{ 
-            ul {
-            justify-content: center;}
-        }
-        }
-    
-}
+            footer{
+                margin:0;
+                display: flex;
+                nav{ 
+                    ul {
+                    justify-content: center;}
+                }   
+            }
+        }   
 }
 /* Vista de 320 a 400 */
 @media (min-width:320px) and (max-width:400px){
@@ -78,60 +75,57 @@
         grid-template-areas:
         "header"
         "main"
-        "footer"
-        ;
+        "footer";
         @include medidas(100%,100%);
         header{
             .navbar-toggler{
                 background-color: white;
-            }
-            .nav-item{
-                text-align: center;
-                .dropdown-item{
-                    text-align: center;
                 }
-            }
-        }
-    main{
-        .slide{
-            width:auto;
-            img{
-                height: 300px;
-            }
-            div{
-                .carousel-caption{
-                    h5{
-                    color:map-get($fondo,secundario);
-                    font-size: 20px;
-                    padding-top: 80px;
+                .nav-item{
+                    text-align: center;
+                    .dropdown-item{
+                    text-align: center;
                     }
                 }
             }
-            
-        }
-        section{
-            .paginas{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2,1fr);
-                justify-items: center;
-                padding:0;
-                gap: 10px;
-                img{
-                    @include medidas(280px,227px);
+            main{
+                .slide{
+                    width:auto;
+                    img{
+                        height: 300px;
+                    }
+                    div{
+                        .carousel-caption{
+                        h5{
+                            color:map-get($fondo,secundario);
+                            font-size: 20px;
+                            padding-top: 80px;
+                        }
+                    }
                 }
             }
-        }
+            section{
+                .paginas{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2,1fr);
+                    justify-items: center;
+                    padding:0;
+                    gap: 10px;
+                    img{
+                    @include medidas(280px,227px);
+                    }
+                }
+            }
         
+        }
+        footer{
+            margin:0;
+            display: flex;
+            nav{ 
+                ul {
+                justify-content: center;}
+            }
+        }
     }
-    footer{
-        margin:0;
-        display: flex;
-        nav{ 
-            ul {
-            justify-content: center;}
-        }
-        }
-    
-}
 }

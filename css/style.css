@@ -309,7 +309,6 @@ body footer nav ul li img {
 }
 /* AVENTURAS */
 .aventu_body {
-  /*background: linear-gradient(to bottom,gray,#5d9ec6);*/
   background: linear-gradient(to bottom, gray, #5d9ec6);
   color: white;
   height: 100%;
@@ -319,8 +318,6 @@ body footer nav ul li img {
   background: #a09c9c;
 }
 .aventu_body main .margin_div {
-  /*display: grid;  
-  grid-template-columns: repeat(2,1fr);*/
   place-items: center;
   margin-top: 60px;
   margin-bottom: 80px;
@@ -386,7 +383,6 @@ body footer nav ul li img {
 }
 .aventu_body main .margin_div ol .tex_aventuras {
   text-align: justify;
-  /*padding-right: 30px;*/
   padding-left: 0;
 }
 .aventu_body main .iguazu_aventura {
@@ -522,7 +518,6 @@ body footer nav ul li img {
 }
 .aventu_body main .aven_cordo ol .tex_aventuras {
   text-align: justify;
-  /*padding-right: 30px;*/
   padding-left: 0;
 }
 
@@ -868,13 +863,13 @@ body .text_nosotros p {
 }
 
 /* Movil contacto */
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 400px) and (max-width: 576px) {
   body .contacto {
-    grid-template-areas: "h1" "div " "section";
-    width: auto;
+    grid-template-areas: "h1" "div" "section";
   }
   body .contacto h1 {
     grid-area: h1;
+    width: auto;
   }
   body .contacto section {
     grid-area: section;
@@ -904,9 +899,12 @@ body .text_nosotros p {
 }
 /* Movil contacto 320 a 400*/
 @media (min-width: 320px) and (max-width: 400px) {
+  body {
+    height: 100%;
+    padding: 0;
+  }
   body .contacto {
-    grid-template-areas: "h1" "div " "section";
-    width: auto;
+    grid-template-areas: "h1" "div" "section";
     justify-items: center;
   }
   body .contacto h1 {
@@ -916,32 +914,32 @@ body .text_nosotros p {
   body .contacto section {
     grid-area: section;
     width: auto;
-    padding: 5px;
+    padding: 0px;
     margin: 20px;
     margin-bottom: 20px;
     place-items: center;
   }
   body .contacto section .formulario {
-    width: 280px;
+    width: 260px;
     margin: 0;
   }
   body .contacto section .formulario div input {
-    width: 265px;
+    width: 245px;
   }
   body .contacto section .formulario textarea {
-    width: 265px;
+    width: 245px;
   }
   body .contacto section .formulario button {
-    width: 200px;
+    width: 180px;
     margin-left: 30px;
   }
   body .contacto .mensaje {
     grid-area: div;
-    width: 300px;
+    width: 260px;
     margin: 0;
   }
   body .contacto .mensaje .map iframe {
-    width: 280px;
+    width: 240px;
     margin: 0;
     margin-bottom: 10px;
   }
@@ -1151,78 +1149,6 @@ body .text_nosotros p {
   border-color: white;
 }
 
-/*MOVIL USHUAIA*/
-@media (min-width: 320px) and (max-width: 576px) {
-  .body_ushuaia .ushuaia_style h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-    background: #a09c9c;
-  }
-  .body_ushuaia .ushuaia_style .carou {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  .body_ushuaia .ushuaia_style .carou div {
-    width: auto;
-    height: 300px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .body_ushuaia .ushuaia_style p {
-    text-align: justify;
-    color: white;
-    margin-top: 20px;
-    width: auto;
-  }
-  .body_ushuaia .ushuaia_style .compra {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-  }
-  .body_ushuaia .ushuaia_style .compra .nota {
-    margin-bottom: 30px;
-  }
-}
-/*TABLET USHUAIA*/
-@media (min-width: 576px) and (max-width: 991px) {
-  .body_ushuaia .ushuaia_style h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-    background: #a09c9c;
-  }
-  .body_ushuaia .ushuaia_style .carou {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  .body_ushuaia .ushuaia_style .carou div {
-    width: auto;
-    height: 300px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .body_ushuaia .ushuaia_style p {
-    text-align: justify;
-    color: white;
-    margin-top: 20px;
-    width: auto;
-  }
-  .body_ushuaia .ushuaia_style .compra {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-  }
-  .body_ushuaia .ushuaia_style .compra .nota {
-    margin-bottom: 30px;
-  }
-}
 /* PUERTO IGUAZU */
 .body_iguazu {
   height: 100%;
@@ -1334,78 +1260,6 @@ body .text_nosotros p {
   border-color: white;
 }
 
-/*MOVIL IGUAZU*/
-@media (min-width: 320px) and (max-width: 576px) {
-  .body_iguazu .iguazu_style h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-    background: #a09c9c;
-  }
-  .body_iguazu .iguazu_style .sliter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  .body_iguazu .iguazu_style .sliter div {
-    width: auto;
-    height: 300px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .body_iguazu .iguazu_style p {
-    text-align: justify;
-    color: white;
-    margin-top: 20px;
-    width: auto;
-  }
-  .body_iguazu .iguazu_style .compra_iguazu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-  }
-  .body_iguazu .iguazu_style .compra_iguazu .nota_iguazu {
-    margin-bottom: 30px;
-  }
-}
-/*TABLET IGUAZU*/
-@media (min-width: 576px) and (max-width: 991px) {
-  .body_iguazu .iguazu_style h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: white;
-    background: #a09c9c;
-  }
-  .body_iguazu .iguazu_style .sliter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-  }
-  .body_iguazu .iguazu_style .sliter div {
-    height: 300px;
-    width: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  .body_iguazu .iguazu_style p {
-    text-align: justify;
-    color: white;
-    margin-top: 20px;
-    width: auto;
-  }
-  .body_iguazu .iguazu_style .compra_iguazu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
-  }
-  .body_iguazu .iguazu_style .compra_iguazu .nota_iguazu {
-    margin-bottom: 30px;
-  }
-}
 /* CORDOBA */
 .body_cordoba {
   height: 100%;
@@ -1523,6 +1377,78 @@ body .text_nosotros p {
   border-color: white;
 }
 
+/*MOVIL USHUAIA*/
+@media (min-width: 320px) and (max-width: 576px) {
+  .body_ushuaia .ushuaia_style h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    background: #a09c9c;
+  }
+  .body_ushuaia .ushuaia_style .carou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .body_ushuaia .ushuaia_style .carou div {
+    width: auto;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .body_ushuaia .ushuaia_style p {
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+    width: auto;
+  }
+  .body_ushuaia .ushuaia_style .compra {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+  }
+  .body_ushuaia .ushuaia_style .compra .nota {
+    margin-bottom: 30px;
+  }
+}
+/*MOVIL IGUAZU*/
+@media (min-width: 320px) and (max-width: 576px) {
+  .body_iguazu .iguazu_style h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    background: #a09c9c;
+  }
+  .body_iguazu .iguazu_style .sliter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .body_iguazu .iguazu_style .sliter div {
+    width: auto;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .body_iguazu .iguazu_style p {
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+    width: auto;
+  }
+  .body_iguazu .iguazu_style .compra_iguazu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+  }
+  .body_iguazu .iguazu_style .compra_iguazu .nota_iguazu {
+    margin-bottom: 30px;
+  }
+}
 /*MOVIL CORDOBA*/
 @media (min-width: 320px) and (max-width: 576px) {
   .body_cordoba .cordoba_style h1 {
@@ -1556,6 +1482,78 @@ body .text_nosotros p {
     place-items: center;
   }
   .body_cordoba .cordoba_style .compra_cordoba .nota_cordoba {
+    margin-bottom: 30px;
+  }
+}
+/*TABLET USHUAIA*/
+@media (min-width: 576px) and (max-width: 991px) {
+  .body_ushuaia .ushuaia_style h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    background: #a09c9c;
+  }
+  .body_ushuaia .ushuaia_style .carou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .body_ushuaia .ushuaia_style .carou div {
+    width: auto;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .body_ushuaia .ushuaia_style p {
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+    width: auto;
+  }
+  .body_ushuaia .ushuaia_style .compra {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+  }
+  .body_ushuaia .ushuaia_style .compra .nota {
+    margin-bottom: 30px;
+  }
+}
+/*TABLET IGUAZU*/
+@media (min-width: 576px) and (max-width: 991px) {
+  .body_iguazu .iguazu_style h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+    background: #a09c9c;
+  }
+  .body_iguazu .iguazu_style .sliter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+  .body_iguazu .iguazu_style .sliter div {
+    height: 300px;
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .body_iguazu .iguazu_style p {
+    text-align: justify;
+    color: white;
+    margin-top: 20px;
+    width: auto;
+  }
+  .body_iguazu .iguazu_style .compra_iguazu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+  }
+  .body_iguazu .iguazu_style .compra_iguazu .nota_iguazu {
     margin-bottom: 30px;
   }
 }

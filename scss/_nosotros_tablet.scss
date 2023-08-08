@@ -4,18 +4,18 @@
 @media (min-width:576px) and (max-width:991px)
 {
     .body_nosotros{
-        .somos{
-            section{
-                div{
-                    @include medidas(550px,300px);
-                    padding: 2px;
-                    margin: 2px;
-                    margin-bottom: 50px;
+            .somos{
+                section{
+                    div{
+                        @include medidas(550px,300px);
+                        padding: 2px;
+                        margin: 2px;
+                        margin-bottom: 50px;
+                    }   
+                }
+                p{
+                @include nosotros(550px,4px,4px);
                 }
             }
-            p{
-                @include nosotros(550px,4px,4px);
-            }
         }
-    }
 }

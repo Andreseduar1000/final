@@ -1,86 +1,79 @@
 /*PAGINA PRINCIPAL*/
 body{
     height: $full-height;
-
     background: linear-gradient(to bottom,gray,#5d9ec6);
     header{
-    .navbar-brand{
+        .navbar-brand{
         color: map-get($fondo,secundario);
-
-    }
-    .navbar-brand:hover{
+        }
+        .navbar-brand:hover{
         color: map-get($fondo,secundario);
-    }
-    .nav-link{
+        }
+        .nav-link{
         color: map-get($fondo,secundario);
-    }
-    .nav-link:hover{
+        }
+        .nav-link:hover{
         color: map-get($fondo,secundario);
-    }
-    .nav-link {
+        }
+        .nav-link {
         text-decoration: none;
         color:map-get($fondo,secundario)/* Color inicial del texto */
-    }
-    
-    .nav-item.dropdown .nav-link.active,
-    .nav-item.dropdown .nav-link:active {
+        }
+        .nav-item.dropdown .nav-link.active,
+        .nav-item.dropdown .nav-link:active {
         color:map-get($fondo,secundario);
+        }
     }
-    
-    
-    
-}
-main{
-    div{
-        h5{
+    main{ 
+        div{
+            h5{
             text-align: center;
             margin-top: -200px;
             font-size: 30px;
-        }
-        .sliter{
-            @include medidas (100%,100%);
-        }
-    }
-    .clipped{
-        overflow: hidden;
-        display: block;
-        margin: 0;
-        clip-path: inset(50%);
-        z-index: -1;
-    }
-    .carousel{
-        margin:-48px 0px 80px 0px;
-
-    }
-    section{
-        .carousel-caption{
-            color:map-get($fondo,secundario);
-            font-size: 40px;
-            margin-right: 400px;
-            height: 500px;
-        }
-        .paginas{
-            @extend .grilla;
-            row-gap: 60px;
-            padding-top: 30px;
-            padding-bottom: 50px;
-            justify-items: center;
-            .texto{
-                display: grid;
+            }
+            .sliter{
+                @include medidas (100%,100%);
+                }
+            }
+            .clipped{
+                overflow: hidden;
+                display: block;
+                margin: 0;
+                clip-path: inset(50%);
+                z-index: -1;
+                }
+            .carousel{
+                margin:-48px 0px 80px 0px;
+                }
+            section{
+                .carousel-caption{
                 color:map-get($fondo,secundario);
-                font-size: 25px;
-                @include pos (center,center);
-                margin: -150px 0px 150px 0px;
-            }
-            .zoom1:hover{
-                @extend .extend-zoom;
-            }
-            .zoom2:hover{
-                @extend .extend-zoom;
-            }
-            #imagen2{
-                height: 227px;
-            }
+                font-size: 40px;
+                margin-right: 400px;
+                height: 500px;
+                }
+            .paginas{
+                @extend .grilla;
+                row-gap: 60px;
+                padding-top: 30px;
+                padding-bottom: 50px;
+                justify-items: center;
+                .texto{
+                    display: grid;
+                    color:map-get($fondo,secundario);
+                    font-size: 25px;
+                    @include pos (center,center);
+                    margin: -150px 0px 150px 0px;
+                }
+                .zoom1:hover{
+                    @extend .extend-zoom;
+                    }
+                .zoom2:hover{
+                    @extend .extend-zoom;
+                    }
+                #imagen2{
+                    height: 227px;
+                    }
             .zoom3:hover{
                 @extend .extend-zoom;
             }
@@ -100,7 +93,6 @@ main{
             }
         }
     }
-
 }
 /**footer**/
 
@@ -119,7 +111,6 @@ footer{
             color: map-get($fondo,secundario);
         }
     }
-    
     nav{
         ul{
             display: flex;
@@ -127,15 +118,14 @@ footer{
             padding: 0;
             text-align: right;
             justify-content:start;
-            li{
-                display: flex;
-                text-decoration: none;
-                img{
-                    @include medidas(30px,30px);
+                li{
+                    display: flex;
+                    text-decoration: none;
+                    img{
+                        @include medidas(30px,30px);
+                    }
                 }
             }
         }
     }
-    
-}
 }
